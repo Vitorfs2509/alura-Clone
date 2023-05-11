@@ -1,0 +1,48 @@
+/*Começando declarando as variáveis de cores*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+}
+
+/*Chamando as variáveis de cores declaradas*/
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+}
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding:0;
+}
+
+/*Declarando a imagem de fundo e configurando ela*/
+.principal{
+    background-image: url(../aluraplus-aula04/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Padronizando a altura do countainer pra 100vh*/
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*Estilizando o botão*/
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+}
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
+}
